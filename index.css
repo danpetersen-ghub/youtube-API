@@ -1,0 +1,16 @@
+:root {
+    --grey: #557B83;
+    --teal: #39AEA9;
+    --green: #A2D5AB; 
+    --yellow: #E5EFC1; 
+}
+
+body {
+    background: var(--teal);
+    color: var(--yellow);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
