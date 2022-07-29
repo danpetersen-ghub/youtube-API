@@ -8,12 +8,12 @@ https://plantuml-editor.kkeisuke.com/
 '/
 
 title 
-Searchbar Component Sequence
+Searchbar Component - Sequence
 end title
 header  ""
 caption ""
 footer 
-created by Dan Petersen
+created by Dan
 end footer
 
 
@@ -46,13 +46,25 @@ skinparam ActorBackgroundColor #white
 skinparam DefaultFontName "Segoe UI"
 
 
-
 /' Declarations '/
-actor "user"
-participant "A"
+actor "User"
+participant "Child Component"
+participant "Parent Component"
+database "Data"
 
 /'Flow '/
-/'Step: User Logs in '/
-
+"User" -> "Child Component": Enter Text
+"Child Component" -> "Child Component": This sets state in \nchild component onChange={} 
+"User" -> "Child Component": Submits form
+"Child Component" -> "Parent Component": Calls props.function \nwithin parent component via \nvia onSubmit={}
+"Parent Component" -> "Data": Makes API Request
+"Data" -> "Parent Component" : (200 OK)
+"Parent Component" -> "Child Component": Via props passes data \nback to child state
+"Child Component" -> "Child Component": Renders Data from State \nto JSX Element
+"Child Component" -> "User": new HTML renderd to User
+"User" -> "Child Component": Changes text
+"Child Component" -> "Child Component": onChange={} updates state for child 
+"User" --> "Child Component": Submits \n(Flow continues as above)...
 /'END Flow '/
+
 @enduml
