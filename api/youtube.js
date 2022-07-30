@@ -1,5 +1,5 @@
-const youtube = {
-    baseURL:'www.googleapis.com/youtube/v3',
+const youtubeAPI = {
+    baseURL:'https://nodestarter-prod.herokuapp.com/api/all/data',
     meta: {
                 headers: {
                 "Authorization": "Client-ID 6FeYbuLG-6MhqNTKxko8Elk2V_hyvEkS-jOz9M-V5ls",
@@ -11,4 +11,4 @@ const youtube = {
     
 }
 
-export default UnSplash ;
+export default youtubeAPI ;

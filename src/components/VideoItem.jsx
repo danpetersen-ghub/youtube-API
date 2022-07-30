@@ -1,13 +1,15 @@
 import React from 'react'
 
 class VideoItem extends React.Component {
-    state = {  
-    };
+    state = {     }
+
+
   
     render() {
       return (
         <div>
-            <h1>VideoItem</h1>
+            <h1>{this.props.title}</h1>
+            <p>id: {this.props.id}</p>
       </div>
       );
     }
