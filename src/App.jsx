@@ -11,6 +11,7 @@ class App extends React.Component {
   state = { 
     videos: [
       { id: 1 , title: 'Video 1', description: 'This is a video 1', thumbnail: 'https://i.ytimg.com/vi/XGSy3_Czz8k/hqdefault.jpg'},
+      { id: 2 , title: 'Video 2', description: 'This is a video 2', thumbnail: 'https://i.ytimg.com/vi/XGSy3_Czz8k/hqdefault.jpg'},
     ], 
   };
 
