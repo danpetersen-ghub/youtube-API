@@ -1,13 +1,21 @@
 const youtubeAPI = {
-    baseURL:'https://nodestarter-prod.herokuapp.com/api/all/data',
+    baseURL:'https://www.googleapis.com/youtube/v3/search',
+    queryparams: `part=snippet&maxResults=10&q=`,
     meta: {
                 headers: {
-                "Authorization": "Client-ID 6FeYbuLG-6MhqNTKxko8Elk2V_hyvEkS-jOz9M-V5ls",
                 "Method": "GET",
                 "Content-Type": "application/json",
                 "Accept": "application/json",
+                "Access-Control-Allow-Origin": "http://localhost:5173/",
             }
-        }
+        },
+    key: 'AIzaSyDlBcMlPbiSqLd1lQmqciaxDG51ks9pzlE',
+    documentation: {
+        project: 'https://console.cloud.google.com/projectselector2/apis/dashboard?supportedpurview=project',
+        url: 'https://developers.google.com/youtube/v3/docs/',
+
+    }
+    
     
 }
 
