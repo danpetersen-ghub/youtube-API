@@ -8,7 +8,7 @@ class VideoList extends React.Component {
     showVideos = () => {
       //console.log(this.props.videos);
       const VideoListArray = this.props.videos.map(
-         (record)  =>   <VideoItem key={record.id} id={record.id} title={record.title} /> 
+         (record)  =>   <VideoItem key={record.id} id={record.id.videoId} title={record.snippet.title} /> 
         
       );
       //console.log(VideoListArray)
@@ -22,7 +22,7 @@ class VideoList extends React.Component {
     render() {
       return (
         <div>
-            <h1>VideoList</h1>
+            <p><i>results:</i></p>
             { this.showVideos() }
       </div>
       );

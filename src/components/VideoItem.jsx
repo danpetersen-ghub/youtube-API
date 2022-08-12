@@ -8,8 +8,7 @@ class VideoItem extends React.Component {
     render() {
       return (
         <div>
-            <h1>{this.props.title}</h1>
-            <p>id: {this.props.id}</p>
+             <p>id: {this.props.id} - {this.props.title}</p>
       </div>
       );
     }

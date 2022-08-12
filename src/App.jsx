@@ -63,7 +63,7 @@ class App extends React.Component {
            {/* <Hello /> */}
            <SearchBar getVideos={this.getVideos} />
             <VideoList videos={this.state.videos} />
-            {/* <VideoDetail /> */}
+            <VideoDetail />
             {/* <VideoItem /> */}
     </div>
     );
