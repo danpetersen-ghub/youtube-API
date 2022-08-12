@@ -45,7 +45,6 @@ skinparam ActorBackgroundColor #white
 'use standard font
 skinparam DefaultFontName "Segoe UI"
 
-
 /' Declarations '/
 actor "User"
 participant "Child Component"
